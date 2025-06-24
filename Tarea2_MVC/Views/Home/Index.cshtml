@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Resumen de Encuestas";
+}
+<main>
+    <h2>Resumen de Encuestas</h2>
+    <div id="tablaResumen"></div>
+    <button onclick="location.href='@Url.Action("Agregar")'">Agregar Encuesta</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+            cargarResumen();
+        });
+    </script>
+</main>
+

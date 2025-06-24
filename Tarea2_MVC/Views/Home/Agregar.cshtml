@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Agregar Encuesta";
+}
+<h2>Complete los siguientes campos para agregar su encuesta</h2>
+
+<div id="mensaje" style="color:red;"></div>
+<form id="formEncuesta">
+    <br>
+    <label>Nombre:</label>
+    <input type="text" id="Nombre" name="Nombre" required /><br />
+    <br>
+    <label>Apellido:</label>
+    <input type="text" id="Apellido" name="Apellido" required /><br />
+    <br>
+    <label>País:</label>
+    <select id="Pais" name="Pais">
+        @foreach (var pais in ViewBag.Paises)
+        {
+            <option value="@pais">@pais</option>
+        }
+    </select><br />
+    <br>
+    <label>Rol:</label>
+    <select id="Rol" name="Rol">
+        @foreach (var rol in ViewBag.Roles)
+        {
+            <option value="@rol">@rol</option>
+        }
+    </select><br />
+    <br>
+    <label>Destino Primario:</label>
+    <select id="DestinoPrimario" name="DestinoPrimario">
+        @foreach (var d in ViewBag.Destinos)
+        {
+            <option value="@d">@d</option>
+        }
+    </select><br />
+    <br>
+    <label>Destino Secundario:</label>
+    <select id="DestinoSecundario" name="DestinoSecundario">
+        @foreach (var d in ViewBag.Destinos)
+        {
+            <option value="@d">@d</option>
+        }
+    </select><br /><br />
+    <br>
+    <button type="button" onclick="guardarEncuesta()">Guardar Encuesta</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/Scripts/scripts.js"></script>
+

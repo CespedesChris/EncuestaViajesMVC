@@ -1,0 +1,26 @@
+[
+  {
+    "Nombre": "Luis",
+    "Apellido": "Céspedes",
+    "Pais": "Estados Unidos",
+    "Rol": "Turista",
+    "DestinoPrimario": "Nueva York",
+    "DestinoSecundario": "Londres"
+  },
+  {
+    "Nombre": "Christopher",
+    "Apellido": "Cespedes",
+    "Pais": "Costa Rica",
+    "Rol": "Investigador",
+    "DestinoPrimario": "Montezuma",
+    "DestinoSecundario": "Isla del Coco"
+  },
+  {
+    "Nombre": "Prueba",
+    "Apellido": "Pruebas2",
+    "Pais": "Canada",
+    "Rol": "Estudiante",
+    "DestinoPrimario": "París",
+    "DestinoSecundario": "Medellín"
+  }
+]
